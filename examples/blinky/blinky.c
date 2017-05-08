@@ -32,5 +32,5 @@ void ICACHE_FLASH_ATTR user_init()
 
   // setup timer (500ms, repeating)
   os_timer_setfn(&some_timer, (os_timer_func_t *)some_timerfunc, NULL);
-  os_timer_arm(&some_timer, 500, 1);
+  os_timer_arm(&some_timer, 100, 1);
 }
